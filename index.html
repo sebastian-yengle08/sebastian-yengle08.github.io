@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sebastian Yengle Alfaro · CV</title>
+<meta name="description" content="Sebastian Yengle Alfaro, estudiante de Ingeniería de Sistemas e Inteligencia Artificial en la UPAO, Trujillo, Perú.">
+<style>
+:root{
+  --bg:#fafaf8; --fg:#1c1e21; --muted:#5b6068; --card:#fff; --line:#e3e3df;
+  --accent:#1f4fd8; --accent-fg:#fff; --tag:#eef1fb; --tag-fg:#2b3f8f;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#121417; --fg:#e8e9ea; --muted:#9aa0a8; --card:#1a1d21; --line:#2c3036;
+    --accent:#7aa2ff; --accent-fg:#0d1220; --tag:#232a3d; --tag-fg:#b7c7ff;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);
+  font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:760px;margin:0 auto;padding:48px 20px 64px}
+h1{font-size:2.1rem;line-height:1.2;margin:0 0 8px}
+h2{font-size:1.25rem;margin:48px 0 16px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+h3{font-size:1.05rem;margin:0 0 4px}
+p{margin:0}
+.lead{color:var(--muted);max-width:60ch}
+.links{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px;padding:0;list-style:none}
+.btn{display:inline-block;padding:10px 16px;border-radius:8px;border:1px solid var(--line);
+  background:var(--card);color:var(--fg);text-decoration:none;font-weight:600;font-size:.95rem}
+.btn:hover{border-color:var(--accent)}
+.btn.primary{background:var(--accent);color:var(--accent-fg);border-color:var(--accent)}
+a:focus-visible,.btn:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.cards{display:grid;gap:14px;padding:0;list-style:none;margin:0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 18px}
+.card p{color:var(--muted);font-size:.97rem}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 0;padding:0;list-style:none}
+.tags li{background:var(--tag);color:var(--tag-fg);font-size:.8rem;padding:2px 10px;border-radius:999px}
+dl{margin:0;display:grid;grid-template-columns:max-content 1fr;gap:8px 20px}
+dt{font-weight:600}
+dd{margin:0;color:var(--muted)}
+.todo{background:#fff3b0;color:#4a3b00;padding:0 4px;border-radius:3px}
+@media (max-width:520px){
+  main{padding-top:32px}
+  h1{font-size:1.7rem}
+  dl{grid-template-columns:1fr;gap:0}
+  dd{margin-bottom:10px}
+  .btn{flex:1 1 100%;text-align:center}
+}
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Sebastian Yengle Alfaro</h1>
+    <p class="lead">Estudiante de Ingeniería de Sistemas e Inteligencia Artificial en la UPAO, Trujillo, Perú.</p>
+    <ul class="links">
+      <li><a class="btn primary" href="CV_Sebastian_Yengle.pdf" download>Descargar CV (PDF)</a></li>
+      <li><a class="btn" href="https://www.linkedin.com/in/sebastian-y-716389274" rel="noopener">LinkedIn</a></li>
+      <li><a class="btn" href="https://github.com/sebastian-yengle08" rel="noopener">GitHub</a></li>
+      <li><a class="btn" href="mailto:yenglealfarosebastian@gmail.com">Correo</a></li>
+    </ul>
+  </header>
+
+  <section aria-labelledby="proyectos">
+    <h2 id="proyectos">Proyectos y experiencia</h2>
+    <ul class="cards">
+      <li class="card">
+        <h3>DentiBot</h3>
+        <p>Asistente virtual con IA para Clínica Dental Sonrisas (freelance, cliente real).</p>
+        <ul class="tags"><li>JavaScript</li><li>IA conversacional</li><li>Web Push</li></ul>
+      </li>
+      <li class="card">
+        <h3>Kodi</h3>
+        <p>App educativa PWA con tutor IA para niños de primaria, con gamificación y zona de padres.</p>
+        <ul class="tags"><li>React</li><li>Vite</li><li>Supabase</li><li>Groq API</li><li>PWA</li><li>Vercel</li></ul>
+      </li>
+      <li class="card">
+        <h3>Historial clínico electrónico</h3>
+        <p>Historial clínico con formularios dinámicos, full-stack.</p>
+        <ul class="tags"><li>NoSQL</li><li>Full-stack</li></ul>
+      </li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="habilidades">
+    <h2 id="habilidades">Habilidades</h2>
+    <dl>
+      <dt>Lenguajes</dt><dd>Python · Java · JavaScript</dd>
+      <dt>Frontend</dt><dd>React · Vite · HTML5 · CSS3 · PWA</dd>
+      <dt>Backend</dt><dd>Node.js · Vercel Functions</dd>
+      <dt>Bases de datos</dt><dd>MySQL · PostgreSQL · Oracle · Supabase</dd>
+      <dt>IA / APIs</dt><dd>Groq API · integración de modelos de lenguaje</dd>
+      <dt>DevOps / OS</dt><dd>Docker · Linux · Git · GitHub</dd>
+      <dt>Ofimática</dt><dd>Excel (avanzado) · PowerPoint (avanzado) · Word</dd>
+    </dl>
+  </section>
+</main>
+</body>
+</html>
