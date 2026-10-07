@@ -5,78 +5,121 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Sebastian Yengle Alfaro · CV</title>
 <meta name="description" content="Sebastian Yengle Alfaro, estudiante de Ingeniería de Sistemas e Inteligencia Artificial en la UPAO, Trujillo, Perú.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#fafaf8; --fg:#1c1e21; --muted:#5b6068; --card:#fff; --line:#e3e3df;
-  --accent:#1f4fd8; --accent-fg:#fff; --tag:#eef1fb; --tag-fg:#2b3f8f;
+  --bg:#f6f4ef; --surface:#ffffff; --fg:#1d2230; --muted:#5d6475; --line:#e6e2d9;
+  --accent:#3b5bdb; --accent-soft:#e8edff; --accent-fg:#ffffff; --glow:#c9d4ff;
+  --shadow:0 1px 2px rgba(29,34,48,.05),0 8px 24px -12px rgba(29,34,48,.15);
+  --serif:"Fraunces",Georgia,"Times New Roman",serif;
+  --sans:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
 }
 @media (prefers-color-scheme: dark){
   :root{
-    --bg:#121417; --fg:#e8e9ea; --muted:#9aa0a8; --card:#1a1d21; --line:#2c3036;
-    --accent:#7aa2ff; --accent-fg:#0d1220; --tag:#232a3d; --tag-fg:#b7c7ff;
+    --bg:#0f1219; --surface:#171b25; --fg:#eceef3; --muted:#a0a7b8; --line:#272d3b;
+    --accent:#8aa4ff; --accent-soft:#222a45; --accent-fg:#0c1226; --glow:#2a3566;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px -12px rgba(0,0,0,.6);
   }
 }
 *{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--bg);color:var(--fg);
-  font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
-main{max-width:760px;margin:0 auto;padding:48px 20px 64px}
-h1{font-size:2.1rem;line-height:1.2;margin:0 0 8px}
-h2{font-size:1.25rem;margin:48px 0 16px;padding-bottom:8px;border-bottom:1px solid var(--line)}
-h3{font-size:1.05rem;margin:0 0 4px}
-p{margin:0}
-.lead{color:var(--muted);max-width:60ch}
-.links{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px;padding:0;list-style:none}
-.btn{display:inline-block;padding:10px 16px;border-radius:8px;border:1px solid var(--line);
-  background:var(--card);color:var(--fg);text-decoration:none;font-weight:600;font-size:.95rem}
-.btn:hover{border-color:var(--accent)}
-.btn.primary{background:var(--accent);color:var(--accent-fg);border-color:var(--accent)}
-a:focus-visible,.btn:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
-.cards{display:grid;gap:14px;padding:0;list-style:none;margin:0}
-.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 18px}
-.card p{color:var(--muted);font-size:.97rem}
-.tags{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 0;padding:0;list-style:none}
-.tags li{background:var(--tag);color:var(--tag-fg);font-size:.8rem;padding:2px 10px;border-radius:999px}
-dl{margin:0;display:grid;grid-template-columns:max-content 1fr;gap:8px 20px}
-dt{font-weight:600}
-dd{margin:0;color:var(--muted)}
-.todo{background:#fff3b0;color:#4a3b00;padding:0 4px;border-radius:3px}
-@media (max-width:520px){
-  main{padding-top:32px}
-  h1{font-size:1.7rem}
-  dl{grid-template-columns:1fr;gap:0}
-  dd{margin-bottom:10px}
-  .btn{flex:1 1 100%;text-align:center}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);font:400 17px/1.65 var(--sans)}
+.wrap{max-width:820px;margin:0 auto;padding:0 22px}
+
+/* Hero */
+.hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line);
+  background:
+   radial-gradient(60% 120% at 85% -10%,var(--glow) 0%,transparent 60%),
+   var(--bg)}
+.hero .wrap{padding-top:72px;padding-bottom:56px}
+.eyebrow{display:inline-block;font-size:.8rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--accent);background:var(--accent-soft);padding:5px 12px;border-radius:999px}
+h1{font:700 clamp(2.2rem,6vw,3.4rem)/1.1 var(--serif);letter-spacing:-.02em;margin:18px 0 14px}
+.lead{font-size:1.15rem;color:var(--muted);max-width:52ch;margin:0}
+.links{display:flex;flex-wrap:wrap;gap:10px;margin:30px 0 0;padding:0;list-style:none}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 18px;border-radius:12px;
+  border:1px solid var(--line);background:var(--surface);color:var(--fg);text-decoration:none;
+  font-weight:600;font-size:.95rem;box-shadow:var(--shadow);transition:transform .15s,border-color .15s}
+.btn:hover{transform:translateY(-2px);border-color:var(--accent)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-fg)}
+.btn svg{width:18px;height:18px;flex:none}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:12px}
+
+/* Sections */
+section{padding:56px 0 8px}
+h2{font:700 1.7rem/1.2 var(--serif);letter-spacing:-.01em;margin:0 0 26px;display:flex;align-items:center;gap:14px}
+h2::after{content:"";flex:1;height:1px;background:var(--line)}
+
+.cards{display:grid;gap:18px;padding:0;margin:0;list-style:none}
+.card{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:18px;
+  padding:24px 26px 22px 26px;box-shadow:var(--shadow);transition:transform .2s,border-color .2s}
+.card:hover{transform:translateY(-3px);border-color:var(--accent)}
+.card .n{font:600 .8rem var(--sans);color:var(--accent);letter-spacing:.1em}
+h3{font:600 1.3rem/1.3 var(--serif);margin:6px 0 8px}
+.card p{margin:0;color:var(--muted);font-size:1rem}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 0;padding:0;list-style:none}
+.tags li,.chips li{background:var(--accent-soft);color:var(--accent);font-size:.82rem;font-weight:500;
+  padding:4px 12px;border-radius:999px}
+
+.skills{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.group{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:20px 22px;box-shadow:var(--shadow)}
+.group h3{font:600 .8rem var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:0 0 12px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}
+
+footer{padding:56px 0 48px;color:var(--muted);font-size:.9rem;text-align:center}
+
+@media (max-width:640px){
+  body{font-size:16px}
+  .hero .wrap{padding-top:48px;padding-bottom:40px}
+  .skills{grid-template-columns:1fr}
+  .btn{flex:1 1 calc(50% - 10px);justify-content:center}
+  .btn.primary{flex-basis:100%}
+  .card{padding:20px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition:none!important;scroll-behavior:auto!important}
 }
 </style>
 </head>
 <body>
-<main>
-  <header>
+<header class="hero">
+  <div class="wrap">
+    <span class="eyebrow">Trujillo, Perú</span>
     <h1>Sebastian Yengle Alfaro</h1>
     <p class="lead">Estudiante de Ingeniería de Sistemas e Inteligencia Artificial en la UPAO, Trujillo, Perú.</p>
     <ul class="links">
-      <li><a class="btn primary" href="CV_Sebastian_Yengle.pdf" download>Descargar CV (PDF)</a></li>
-      <li><a class="btn" href="https://www.linkedin.com/in/sebastian-y-716389274" rel="noopener">LinkedIn</a></li>
-      <li><a class="btn" href="https://github.com/sebastian-yengle08" rel="noopener">GitHub</a></li>
-      <li><a class="btn" href="mailto:yenglealfarosebastian@gmail.com">Correo</a></li>
+      <li><a class="btn primary" href="CV_Sebastian_Yengle.pdf" download>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 21h16"/></svg>Descargar CV (PDF)</a></li>
+      <li><a class="btn" href="https://www.linkedin.com/in/sebastian-y-716389274" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 9.75h4V21H3zM9.5 9.75h3.8v1.6h.06c.53-1 1.84-2.05 3.8-2.05 4.06 0 4.8 2.67 4.8 6.14V21h-4v-4.9c0-1.17-.02-2.67-1.63-2.67-1.63 0-1.88 1.27-1.88 2.59V21h-4z"/></svg>LinkedIn</a></li>
+      <li><a class="btn" href="https://github.com/sebastian-yengle08" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 00-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.34-1.28-1.7-1.28-1.7-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.7 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 015.78 0c2.2-1.49 3.17-1.18 3.17-1.18.62 1.59.23 2.76.11 3.05.74.81 1.18 1.83 1.18 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0012 .5z"/></svg>GitHub</a></li>
+      <li><a class="btn" href="mailto:yenglealfarosebastian@gmail.com">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>Correo</a></li>
     </ul>
-  </header>
+  </div>
+</header>
 
+<main class="wrap">
   <section aria-labelledby="proyectos">
     <h2 id="proyectos">Proyectos y experiencia</h2>
     <ul class="cards">
       <li class="card">
+        <span class="n">01</span>
         <h3>DentiBot</h3>
         <p>Asistente virtual con IA para Clínica Dental Sonrisas (freelance, cliente real).</p>
         <ul class="tags"><li>JavaScript</li><li>IA conversacional</li><li>Web Push</li></ul>
       </li>
       <li class="card">
+        <span class="n">02</span>
         <h3>Kodi</h3>
         <p>App educativa PWA con tutor IA para niños de primaria, con gamificación y zona de padres.</p>
         <ul class="tags"><li>React</li><li>Vite</li><li>Supabase</li><li>Groq API</li><li>PWA</li><li>Vercel</li></ul>
       </li>
       <li class="card">
+        <span class="n">03</span>
         <h3>Historial clínico electrónico</h3>
         <p>Historial clínico con formularios dinámicos, full-stack.</p>
         <ul class="tags"><li>NoSQL</li><li>Full-stack</li></ul>
@@ -86,16 +129,18 @@ dd{margin:0;color:var(--muted)}
 
   <section aria-labelledby="habilidades">
     <h2 id="habilidades">Habilidades</h2>
-    <dl>
-      <dt>Lenguajes</dt><dd>Python · Java · JavaScript</dd>
-      <dt>Frontend</dt><dd>React · Vite · HTML5 · CSS3 · PWA</dd>
-      <dt>Backend</dt><dd>Node.js · Vercel Functions</dd>
-      <dt>Bases de datos</dt><dd>MySQL · PostgreSQL · Oracle · Supabase</dd>
-      <dt>IA / APIs</dt><dd>Groq API · integración de modelos de lenguaje</dd>
-      <dt>DevOps / OS</dt><dd>Docker · Linux · Git · GitHub</dd>
-      <dt>Ofimática</dt><dd>Excel (avanzado) · PowerPoint (avanzado) · Word</dd>
-    </dl>
+    <div class="skills">
+      <div class="group"><h3>Lenguajes</h3><ul class="chips"><li>Python</li><li>Java</li><li>JavaScript</li></ul></div>
+      <div class="group"><h3>Frontend</h3><ul class="chips"><li>React</li><li>Vite</li><li>HTML5</li><li>CSS3</li><li>PWA</li></ul></div>
+      <div class="group"><h3>Backend</h3><ul class="chips"><li>Node.js</li><li>Vercel Functions</li></ul></div>
+      <div class="group"><h3>Bases de datos</h3><ul class="chips"><li>MySQL</li><li>PostgreSQL</li><li>Oracle</li><li>Supabase</li></ul></div>
+      <div class="group"><h3>IA / APIs</h3><ul class="chips"><li>Groq API</li><li>Integración de modelos de lenguaje</li></ul></div>
+      <div class="group"><h3>DevOps / OS</h3><ul class="chips"><li>Docker</li><li>Linux</li><li>Git</li><li>GitHub</li></ul></div>
+      <div class="group"><h3>Ofimática</h3><ul class="chips"><li>Excel (avanzado)</li><li>PowerPoint (avanzado)</li><li>Word</li></ul></div>
+    </div>
   </section>
 </main>
+
+<footer>© Sebastian Yengle Alfaro · Trujillo, Perú</footer>
 </body>
 </html>
