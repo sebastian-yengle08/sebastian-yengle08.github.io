@@ -20,7 +20,7 @@ window.DATA = {
     about: [
       "Estudiante de Ingeniería de Sistemas e Inteligencia Artificial en la UPAO (Trujillo, Perú).",
       "Aprendo desarrollando: he trabajado en un asistente para una clínica dental, un tutor para niños de primaria y una idea para detectar hallazgos arqueológicos en obras.",
-      "Lidero equipos de desarrollo y proyectos de impacto social."
+      "Me gusta trabajar en equipo y aprender con proyectos de impacto real."
     ],
     metrics: [
       { n: 2831, s: "", l: "sitios arqueológicos", sub: "cruzados en HuacaScan Field", c: "var(--a2)" },
@@ -144,7 +144,7 @@ window.DATA = {
     about: [
       "Systems Engineering & Artificial Intelligence student at UPAO (Trujillo, Peru).",
       "I learn by building: I've worked on an assistant for a dental clinic, a tutor for primary school kids, and an idea to flag archaeological finds at construction sites.",
-      "I lead development teams and social-impact projects."
+      "I enjoy teamwork and learning from projects with real-world impact."
     ],
     metrics: [
       { n: 2831, s: "", l: "archaeological sites", sub: "cross-checked in HuacaScan", c: "var(--a2)" },
