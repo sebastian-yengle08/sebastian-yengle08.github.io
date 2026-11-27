@@ -19,7 +19,7 @@ window.DATA = {
     open: ["ABIERTO A", "Prácticas pre-profesionales · desarrollo, datos e IA"],
     about: [
       "Estudiante de Ingeniería de Sistemas e Inteligencia Artificial en la UPAO (Trujillo, Perú).",
-      "Construyo soluciones con IA para problemas reales: un asistente para una clínica dental, un tutor para niños de primaria y una plataforma que ayuda a detectar hallazgos arqueológicos en obras.",
+      "Aprendo desarrollando: he trabajado en un asistente para una clínica dental, un tutor para niños de primaria y una idea para detectar hallazgos arqueológicos en obras.",
       "Lidero equipos de desarrollo y proyectos de impacto social."
     ],
     metrics: [
@@ -122,7 +122,7 @@ window.DATA = {
       { k: ["cv", "curricul", "hoja", "pdf", "descarg"], a: "Puedes descargar mi CV en PDF con el botón 'Descargar CV' al inicio de esta página, o escribiendo el comando 'cv' en la terminal." },
       { k: ["donde", "vives", "ubic", "ciudad", "trujillo", "peru"], a: "Vivo en Trujillo, Perú." },
       { k: ["forge", "dtn", "incubad", "startup", "emprend"], a: "Participé en el programa Tu Futuro de Forge Perú (habilidades socioemocionales y digitales, desde 2024) y en Discovery, la incubadora de negocios de DTN Hub Digital UPAO (septiembre de 2024)." },
-      { k: ["quien", "eres", "presenta", "sebastian", "nombre", "hablame", "cuentame", "sobre"], a: "Soy Sebastian Yengle Alfaro, estudiante de Ingeniería de Sistemas e Inteligencia Artificial en la UPAO (Trujillo, Perú). Me enfoco en IA aplicada, apps web y PWA, y datos y BI. Construyo soluciones para problemas reales y lidero equipos y proyectos de impacto social." }
+      { k: ["quien", "eres", "presenta", "sebastian", "nombre", "hablame", "cuentame", "sobre"], a: "Soy Sebastian Yengle Alfaro, estudiante de Ingeniería de Sistemas e Inteligencia Artificial en la UPAO (Trujillo, Perú). Me enfoco en IA aplicada, apps web y PWA, y datos y BI. Aprendo desarrollando proyectos con impacto real y me gusta trabajar en equipo." }
     ]
   },
 
@@ -143,7 +143,7 @@ window.DATA = {
     open: ["OPEN TO", "Internships · software, data & AI"],
     about: [
       "Systems Engineering & Artificial Intelligence student at UPAO (Trujillo, Peru).",
-      "I build AI solutions for real problems: an assistant for a dental clinic, a tutor for primary school kids, and a platform that helps flag archaeological finds at construction sites.",
+      "I learn by building: I've worked on an assistant for a dental clinic, a tutor for primary school kids, and an idea to flag archaeological finds at construction sites.",
       "I lead development teams and social-impact projects."
     ],
     metrics: [
@@ -246,7 +246,7 @@ window.DATA = {
       { k: ["cv", "resume", "download", "pdf"], a: "You can download my CV as a PDF with the 'Download CV' button at the top of this page, or by typing 'cv' in the terminal." },
       { k: ["where", "live", "location", "city", "trujillo", "peru"], a: "I live in Trujillo, Peru." },
       { k: ["forge", "dtn", "incubator", "startup", "entrepreneur"], a: "I took part in Forge Perú's Tu Futuro program (socio-emotional and digital skills, since 2024) and in Discovery, the business incubator of DTN Hub Digital UPAO (September 2024)." },
-      { k: ["who", "you", "introduce", "sebastian", "name", "tell", "about"], a: "I'm Sebastian Yengle Alfaro, a Systems Engineering & Artificial Intelligence student at UPAO (Trujillo, Peru). I focus on applied AI, web apps and PWAs, and data & BI. I build solutions for real problems and lead teams and social-impact projects." }
+      { k: ["who", "you", "introduce", "sebastian", "name", "tell", "about"], a: "I'm Sebastian Yengle Alfaro, a Systems Engineering & Artificial Intelligence student at UPAO (Trujillo, Peru). I focus on applied AI, web apps and PWAs, and data & BI. I learn by building projects with real-world impact and enjoy teamwork." }
     ]
   }
 };
